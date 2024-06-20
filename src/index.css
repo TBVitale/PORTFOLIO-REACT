@@ -87,14 +87,14 @@ code {
 
 
 /*CONTENT HOME INICIO*/
-.home{
-  display:  flex;
+.home {
+  display: flex;
   text-align: center;
   flex-direction: column;
-  height: 75vh;
+  height: 73vh;
 }
 
-.home p{
+.home p {
   color: rgb(241, 238, 238);
   font-size: 15px;
 }
@@ -131,7 +131,7 @@ code {
   transition: all 400ms;
 }
 
-.button-proyects{
+.button-proyects {
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -158,39 +158,47 @@ code {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.page .heading{
-  text-shadow: #fa4529 1px 1px 2px ;
+.page .heading {
+  text-shadow: #fa4529 1px 1px 2px;
   font-size: 40px;
   font-weight: 500;
   margin-top: 20px;
 }
 
 /*CONTACTO*/
-.contact{
+.contact {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
+.content-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 15px;
+}
 
-#page-contact{
-  height: 72vh;
+
+#page-contact {
+  height: 74vh;
 }
 
 input[type="text"],
-textarea{
-    width: 500px;
-    padding: 15px;
-    margin: 20px;
-    border-radius: 10px;
-    border: solid 1px white;
-    background-color: transparent;
-    color: #f5f5f5;
-  
+textarea {
+  width: 500px;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
+  border: solid 1px white;
+  background-color: transparent;
+  color: #f5f5f5;
+
 }
 
 
-input[type="submit"]{
+input[type="submit"] {
   padding: 15px;
   border-radius: 10px;
   background-color: transparent;
@@ -202,56 +210,66 @@ input[type="submit"]{
   transition: all 400ms;
 }
 
-input[type="submit"]:hover{
- background-color: white;
+input[type="submit"]:hover {
+  background-color: white;
   color: black;
 }
 
 
 /*CONTENT SERVICIOS*/
-.services{
+.services {
   color: #f5f5f5;
   display: flex;
   flex-direction: column;
-  height: 60vh;
+  height: 70vh;
+  padding: 30px;
 }
 
-.service h2{
-  text-shadow: #fa4529 1px 1px 2px ;
+.service h2 {
+  text-shadow: #fa4529 1px 1px 2px;
   font-size: 40px;
   color: #f5f5f5;
   font-weight: 400;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.service p{
+.service p {
   font-size: 20px;
   margin: 0 auto;
 }
 
 /*SECTION CURRI*/
 
-#page-curri{
-height: 180vh;
+#page-curri {
+  height: 70vh;
 }
 
 
-.curri{
+.h2-cv {
+  color: white;
+  text-shadow: #fa4529 1px 1px 2px;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.curri {
   display: flex;
   flex-direction: column;
-  color:#f5f5f5;
+  color: #f5f5f5;
   margin: 0 auto;
 }
 
-.h2-curri{
+.h2-curri {
   font-size: 40px;
   color: #f5f5f5;
   font-weight: 400;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  text-shadow: #fa4529 1px 1px 2px ;
+  text-shadow: #fa4529 1px 1px 2px;
 }
 
-.ul-curri{
+.ul-curri {
   font-size: 20px;
 }
 
@@ -259,8 +277,102 @@ height: 180vh;
 
 /*PORTFOLIO*/
 
-#page-port{
-  height: 73vh;
+/*CONTENIDOS GENERALES DE TITULOS Y LINKS*/
+
+.work-item span {
+  font-size: 15px;
+  color: #444;
+  display: block;
+  margin-top: 35px;
+}
+
+.work-item h2 {
+  font-size: 25px;
+  color: #ddd;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.work-item a:hover {
+  color: #444;
+}
+
+.work-item a {
+  color: #ddd;
+  text-decoration: none;
+  transition: all 400ms;
+}
+
+.work-item h3 {
+  font-size: 15px;
+  color: #444;
+  display: block;
+  margin-top: 10px;
+  border-top: solid 1px #ddd;
+  padding-top: 10px;
+}
+
+
+
+
+/*CONTENIDOS GENERALES D LA SECTION */
+
+
+
+#page-port {
+  height: 240vh;
+}
+
+
+
+.works {
+  flex-wrap: wrap;
+  display: flex;
+
+}
+
+.work-item {
+  flex-basis: 30%;
+  flex-grow: 1;
+  margin: 30px;
+}
+
+.work-item .mask {
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px #ddd;
+  border: 1px solid #ddd;
+}
+
+.work-item .mask:hover img {
+  width: 120%;
+  margin-right: 30%;
+}
+
+.work-item img {
+  width: 100%;
+  transition: all 500ms;
+}
+
+/*PROYECTS*/
+
+.page-proyect {
+  height: 120vh;
+}
+
+
+.page-proyect .mask {
+  margin-top: 40px;
+  height: 700px;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px #ddd;
+}
+
+
+.page p{
+   color: #afafaf;
+   font-size: 20px;
 }
 
 
@@ -272,4 +384,3 @@ height: 180vh;
   color: #f5f5f5;
   padding-top: 60px;
 }
-
